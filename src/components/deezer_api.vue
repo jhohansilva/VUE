@@ -1,9 +1,9 @@
 <template>
   <div class="hello">
     <h1>Deezer API</h1>
-    <h3>Canciones por artista</h3>
+    <h3>Búsqueda de música</h3>
     <div class="busqueda">
-      <vs-input label-placeholder="Artista" v-model="artista" />
+      <vs-input label-placeholder="Artista o canción" v-model="artista" />
       <vs-button color="primary" type="filled" v-on:click="filterData()">Buscar</vs-button>
     </div>
     <ul>
@@ -13,6 +13,8 @@
         </div>
         <div class="descrip">
           <b>{{ item.title }}</b>
+          <br />
+          <span>Artista: {{ item.artist.name }}</span>
           <br />
           <span>Duración: {{ item.duration.toString().toHHMMSS() }}</span>
           <br />
