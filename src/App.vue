@@ -6,8 +6,8 @@
 </template>
 
 <script>
-// import Menu from './components/HelloWorld.vue'
-import Menu from './components/GB.vue'
+import Menu from './components/HelloWorld.vue'
+// import Menu from './components/GB.vue'
 
 export default {
   name: 'app',
