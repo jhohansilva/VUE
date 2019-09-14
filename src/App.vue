@@ -6,8 +6,7 @@
 </template>
 
 <script>
-import Menu from './components/HelloWorld.vue'
-// import Menu from './components/GB.vue'
+import Menu from './components/deezer_api.vue'
 
 export default {
   name: 'app',
